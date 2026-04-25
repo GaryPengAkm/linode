@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 
 # ================= Configuration Area =================
 # 1. Feishu/Lark Webhook URL
-FEISHU_URL = "https://open.feishu.cn/open-apis/bot/v2/hook/b21647e5-e09c-4cea-956e-6629997d9d45"
+FEISHU_URL = "https://open.feishu.cn/open-apis/bot/v2/hook/b21647e5-e09c-4cea-956e-xxx"
 
 # 2. Keyword filtering (Must match the keyword configured in the Feishu bot security settings)
 KEYWORD = "Linode" 

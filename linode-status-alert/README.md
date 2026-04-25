@@ -41,6 +41,7 @@ KEYWORD: Your bot's security keyword.
 INCIDENT_COMPONENTS: List of components to monitor (leave empty [] for all).
 
 MAINTENANCE_COMPONENTS: List of components for maintenance alerts.
+
 **Refer to linode_components.txt for the component name**
 
 ## 3. Deploy as a System Service
@@ -50,7 +51,7 @@ To ensure the script runs continuously and survives reboots, use systemd.
 
   nano /etc/systemd/system/linode-status-alert.service
   Paste the following:
-      Ini, TOML
+     
       [Unit]
       Description=Linode Feishu Monitor Service
       After=network-online.target

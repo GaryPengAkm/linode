@@ -48,10 +48,9 @@ MAINTENANCE_COMPONENTS: List of components for maintenance alerts.
 To ensure the script runs continuously and survives reboots, use systemd.
 
 ### Create the service file:
-‘’‘
   nano /etc/systemd/system/linode-status-alert.service
   Paste the following:
-     
+ ```  
       [Unit]
       Description=Linode Feishu Monitor Service
       After=network-online.target
@@ -66,7 +65,7 @@ To ensure the script runs continuously and survives reboots, use systemd.
       
       [Install]
       WantedBy=multi-user.target
- ’‘’
+```
  
 ### Start the service:
 

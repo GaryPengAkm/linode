@@ -1,4 +1,4 @@
-# Linode Batch Management Assistant
+# Linode Batch Management 
 
 A powerful, Python-based GUI tool designed to bring efficient **batch operations** to the Linode (Akamai) ecosystem.
 

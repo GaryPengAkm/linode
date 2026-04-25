@@ -39,3 +39,17 @@ source venv/bin/activate  # Mac/Linux
 # venv\\Scripts\\activate  # Windows
 
 pip install streamlit linode_api4
+
+### Step 2: Run the Application
+
+Save the script as `linode-batch-manager.py` and execute:
+
+```bash
+streamlit run linode-batch-manager.py
+```
+The interface will automatically open in your default browser at `http://localhost:8501`.
+
+### Step 3: Configure Token
+1. Go to **Global Settings** in the left sidebar.
+2. Enter your Linode API Token and click **Save and Apply Token**.
+3. Once verified, the input field will hide, and your instance list will appear.

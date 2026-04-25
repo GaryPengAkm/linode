@@ -32,13 +32,15 @@ A powerful, Python-based GUI tool designed to bring efficient **batch operations
 - A **Linode Personal Access Token** (with Read/Write permissions for Linodes).
 
 ### Step 1: Install Dependencies
+
+
 It is recommended to use a virtual environment:
 ```bash
 python -m venv venv
 source venv/bin/activate  # Mac/Linux
 # venv\\Scripts\\activate  # Windows
-
 pip install streamlit linode_api4
+```
 
 ### Step 2: Run the Application
 

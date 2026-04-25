@@ -1,4 +1,8 @@
-# 🚀 Key Features
+# Linode Feishu/Lark Unified Monitor
+
+A robust, automated monitoring and notification bridge that fetches real-time infrastructure status from Linode (Akamai Cloud) and pushes targeted alerts to Feishu/Lark.
+
+## 🚀 Key Features
 
 * **Unified Monitoring**: Tracks both **Unresolved Incidents** (unexpected outages) and **Scheduled Maintenances** (planned work).
 * **Precision Filtering**: Supports filtering by **Component Name** (e.g., specific datacenters like `sg-sin-2`) and **Impact Level** (e.g., only `major` or `critical` events) to reduce alert fatigue.
@@ -8,7 +12,7 @@
 
 ---
 
-# 🛠 Prerequisites
+## 🛠 Prerequisites
 
 * **Python**: 3.7+
 * **Libraries**: `requests`, `schedule`
@@ -16,22 +20,22 @@
 
 ---
 
-# 📦 Installation & Deployment
+## 📦 Installation & Deployment
 
-## 1. Environment Setup
+### 1. Environment Setup
 We recommend using a Python virtual environment to isolate dependencies.
 
 
-### Create directory and virtual environment
+#### Create directory and virtual environment
 mkdir -p /root/linode-status-alert
 cd /root/linode-status-alert
 python3 -m venv venv
 
-### Activate and install requirements
+#### Activate and install requirements
 source venv/bin/activate
 pip install requests schedule
 
-## 2. Configuration
+### 2. Configuration
 Edit the Configuration Area inside linode_monitor.py:
 
 FEISHU_URL: Your bot's webhook URL.
@@ -44,10 +48,10 @@ MAINTENANCE_COMPONENTS: List of components for maintenance alerts.
 
 **Refer to linode_components.txt for the component name**
 
-## 3. Deploy as a System Service
+### 3. Deploy as a System Service
 To ensure the script runs continuously and survives reboots, use systemd.
 
-### Create the service file:
+#### Create the service file:
   nano /etc/systemd/system/linode-status-alert.service
   Paste the following:
  ```  
@@ -67,12 +71,12 @@ To ensure the script runs continuously and survives reboots, use systemd.
       WantedBy=multi-user.target
 ```
  
-### Start the service:
+#### Start the service:
 
 systemctl daemon-reload
 systemctl enable linode-status-alert.service
 systemctl start linode-status-alert.service
 
-# 📊 Monitoring
+## 📊 Monitoring
 Check the logs in real-time to verify the script is polling correctly:
 journalctl -u linode-status-alert.service -f

@@ -1,0 +1,211 @@
+### Please copy all content after * 
+
+### Core & Standalone Services
+* ACLP Logs
+* Hosted DNS Service
+* Linode Manager and API
+* Linode.com
+* Longview
+* Managed Databases
+
+### Regions
+* AP-Northeast-2 (Tokyo 2)
+* AP-South (Singapore)
+* AP-Southeast (Sydney)
+* AP-West (Mumbai)
+* AU-MEL (Melbourne)
+* BR-GRU (Sao Paulo)
+* CA-Central (Toronto)
+* CL-SCL (Santiago)
+* CO-BOG (Bogota)
+* DE-FRA-2 (Frankfurt 2)
+* DE-HAM (Hamburg)
+* ES-MAD (Madrid)
+* EU-Central (Frankfurt)
+* EU-West (London)
+* FR-MRS (Marseille)
+* FR-PAR (Paris)
+* FR-PAR-2 (Paris 2)
+* GB-LON (London 2)
+* ID-CGK (Jakarta)
+* IN-BOM-2 (Mumbai 2)
+* IN-MAA (Chennai)
+* IT-MIL (Milan)
+* JP-OSA (Osaka)
+* JP-TYO-3 (Tokyo 3)
+* MX-QRO (Queretaro)
+* MY-KUL (Kuala Lumpur)
+* NL-AMS (Amsterdam)
+* NZ-AKL (Auckland)
+* SE-STO (Stockholm)
+* SG-SIN-2 (Singapore 2)
+* US-Central (Dallas)
+* US-DEN (Denver)
+* US-East (Newark)
+* US-HOU (Houston)
+* US-IAD (Washington)
+* US-LAX (Los Angeles)
+* US-MIA (Miami)
+* US-ORD (Chicago)
+* US-SEA (Seattle)
+* US-Southeast (Atlanta)
+* US-West (Fremont)
+* ZA-JNB (Johannesburg)
+
+### Block Storage
+* AP-Northeast-2 (Tokyo 2) Block Storage
+* AP-South (Singapore) Block Storage
+* AP-Southeast (Sydney) Block Storage
+* AP-West (Mumbai) Block Storage
+* AU-MEL (Melbourne) Block Storage
+* BR-GRU (São Paulo) Block Storage
+* CA-Central (Toronto) Block Storage
+* DE-FRA-2 (Frankfurt 2) Block Storage
+* ES-MAD (Madrid) Block Storage
+* EU-Central (Frankfurt) Block Storage
+* EU-West (London) Block Storage
+* FR-PAR (Paris) Block Storage
+* GB-LON (London 2) Block Storage
+* ID-CGK (Jakarta) Block Storage
+* IN-BOM-2 (Mumbai 2) Block Storage
+* IN-MAA (Chennai) Block Storage
+* IT-MIL (Milan) Block Storage
+* JP-OSA (Osaka) Block Storage
+* JP-TYO-3 (Tokyo 3) Block Storage
+* NL-AMS (Amsterdam) Block Storage
+* SE-STO (Stockholm) Block Storage
+* SG-SIN-2 (Singapore 2) Block Storage
+* US-Central (Dallas) Block Storage
+* US-East (Newark) Block Storage
+* US-IAD (Washington) Block Storage
+* US-LAX (Los Angeles) Block Storage
+* US-MIA (Miami) Block Storage
+* US-ORD (Chicago) Block Storage
+* US-SEA (Seattle) Block Storage
+* US-Southeast (Atlanta) Block Storage
+* US-West (Fremont) Block Storage
+
+### NodeBalancers
+* AP-Northeast-2 (Tokyo 2) NodeBalancers
+* AP-South (Singapore) NodeBalancers
+* AP-Southeast (Sydney) NodeBalancers
+* AP-West (Mumbai) NodeBalancers
+* AU-MEL (Melbourne) NodeBalancers
+* BR-GRU (São Paulo) NodeBalancers
+* CA-Central (Toronto) NodeBalancers
+* DE-FRA-2 (Frankfurt 2) NodeBalancers
+* ES-MAD (Madrid) NodeBalancers
+* EU-Central (Frankfurt)  NodeBalancers
+* EU-West (London) NodeBalancers
+* FR-PAR (Paris) NodeBalancers
+* GB-LON (London 2) NodeBalancers
+* ID-CGK (Jakarta) NodeBalancers
+* IN-BOM-2 (Mumbai 2) NodeBalancers
+* IN-MAA (Chennai) NodeBalancers
+* IT-MIL (Milan) NodeBalancers
+* JP-OSA (Osaka) NodeBalancers
+* JP-TYO-3 (Tokyo 3) NodeBalancers
+* NL-AMS (Amsterdam) NodeBalancers
+* SE-STO (Stockholm) NodeBalancers
+* SG-SIN-2 (Singapore 2) NodeBalancers
+* US-Central (Dallas) NodeBalancers
+* US-East (Newark) NodeBalancers
+* US-IAD (Washington) NodeBalancers
+* US-LAX (Los Angeles) NodeBalancers
+* US-MIA (Miami) NodeBalancers
+* US-ORD (Chicago) NodeBalancers
+* US-SEA (Seattle) NodeBalancers
+* US-Southeast (Atlanta) NodeBalancers
+* US-West (Fremont) NodeBalancers
+
+### Backups
+* AP-Northeast-2 (Tokyo 2) Backups
+* AP-South (Singapore) Backups
+* AP-Southeast (Sydney) Backups
+* AP-West (Mumbai) Backups
+* AU-MEL (Melbourne) Backups
+* BR-GRU (São Paulo) Backups
+* CA-Central (Toronto) Backups
+* DE-FRA-2 (Frankfurt 2) Backups
+* ES-MAD (Madrid) Backups
+* EU-Central (Frankfurt) Backups
+* EU-West (London) Backups
+* FR-PAR (Paris) Backups
+* GB-LON (London 2) Backups
+* ID-CGK (Jakarta) Backups
+* IN-BOM-2 (Mumbai 2) Backups
+* IN-MAA (Chennai) Backups
+* IT-MIL (Milan) Backups
+* JP-OSA (Osaka) Backups
+* JP-TYO-3 (Tokyo) Backups
+* NL-AMS (Amsterdam) Backups
+* SE-STO (Stockholm) Backups
+* SG-SIN-2 (Singapore 2) Backups
+* US-Central (Dallas) Backups
+* US-East (Newark) Backups
+* US-IAD (Washington) Backups
+* US-LAX (Los Angeles) Backups
+* US-MIA (Miami) Backups
+* US-ORD (Chicago) Backups
+* US-SEA (Seattle) Backups
+* US-Southeast (Atlanta) Backups
+* US-West (Fremont) Backups
+
+### Linode Kubernetes Engine
+* AP-Northeast (Tokyo 2) Linode Kubernetes Engine
+* AP-South (Singapore) Linode Kubernetes Engine
+* AP-Southeast (Sydney) Linode Kubernetes Engine
+* AP-West (Mumbai) Linode Kubernetes Engine
+* AU-MEL (Melbourne) Linode Kubernetes Engine
+* BR-GRU (São Paulo) Linode Kubernetes Engine
+* CA-Central (Toronto) Linode Kubernetes Engine
+* DE-FRA-2 (Frankfurt 2) Linode Kubernetes Engine
+* ES-MAD (Madrid) Linode Kubernetes Engine
+* EU-Central (Frankfurt) Linode Kubernetes Engine
+* EU-West (London) Linode Kubernetes Engine
+* FR-PAR (Paris) Linode Kubernetes Engine
+* GB-LON (London 2) Linode Kubernetes Engine
+* ID-CGK (Jakarta) Linode Kubernetes Engine
+* IN-BOM-2 (Mumbai 2) Linode Kubernetes Engine
+* IN-MAA (Chennai) Linode Kubernetes Engine
+* IT-MIL (Milan) Linode Kubernetes Engine
+* JP-OSA (Osaka) Linode Kubernetes Engine
+* JP-TYO-3 (Tokyo 3) Linode Kubernetes Engine
+* NL-AMS (Amsterdam) Linode Kubernetes Engine
+* SE-STO (Stockholm) Linode Kubernetes Engine
+* SG-SIN-2 (Singapore 2) Linode Kubernetes Engine
+* US-Central (Dallas) Linode Kubernetes Engine
+* US-East (Newark) Linode Kubernetes Engine
+* US-IAD (Washington) Linode Kubernetes Engine
+* US-LAX (Los Angeles) Linode Kubernetes Engine
+* US-MIA (Miami) Linode Kubernetes Engine
+* US-ORD (Chicago) Linode Kubernetes Engine
+* US-SEA (Seattle) Linode Kubernetes Engine
+* US-Southeast (Atlanta) Linode Kubernetes Engine
+* US-West (Fremont) Linode Kubernetes Engine
+
+### Object Storage
+* AP-South (Singapore) Object Storage
+* AU-MEL (Melbourne) Object Storage
+* BR-GRU (Sao Paulo) Object Storage
+* DE-FRA-2 (Frankfurt 2) Object Storage
+* ES-MAD (Madrid) Object Storage
+* EU-Central (Frankfurt) Object Storage
+* FR-PAR (Paris) Object Storage
+* GB-LON (London 2) Object Storage
+* ID-CGK (Jakarta) Object Storage
+* IN-BOM-2 (Mumbai 2) Object Storage
+* IN-MAA (Chennai) Object Storage
+* IT-MIL (Milan) Object Storage
+* JP-OSA (Osaka) Object Storage
+* JP-TYO-3 (Tokyo 3) Object Storage
+* NL-AMS (Amsterdam) Object Storage
+* SE-STO (Stockholm) Object Storage
+* SG-SIN-2 (Singapore 2) Object Storage
+* US-East (Newark) Object Storage
+* US-IAD (Washington) Object Storage
+* US-LAX (Los Angeles) Object Storage
+* US-MIA (Miami) Object Storage
+* US-ORD (Chicago) Object Storage
+* US-SEA (Seattle) Object Storage
+* US-Southeast (Atlanta) Object Storage

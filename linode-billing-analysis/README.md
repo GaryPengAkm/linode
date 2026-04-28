@@ -1,6 +1,6 @@
-# Linode Billing Analysis Tool 📊
+# Linode Invoice Analysis Tool 📊
 
-A professional Streamlit-based dashboard designed to audit and visualize Linode (Akamai Cloud) billing data. This tool translates complex, line-by-line CSV logs into actionable insights, helping users verify costs and understand infrastructure trends.
+A professional Streamlit-based dashboard designed to audit and visualize Linode Invoice data. This tool translates complex, line-by-line CSV logs into actionable insights, helping users verify costs and understand infrastructure trends.
 
 ## ✨ Key Features
 
@@ -20,13 +20,13 @@ A professional Streamlit-based dashboard designed to audit and visualize Linode 
 ```bash
    pip install streamlit pandas plotly numpy
 ```
-3. **Save the Code**: Save the provided script as linode_billing_analysis.py.
+3. **Save the Code**: Save the provided script as linode_invoice_analysis.py.
 4. **Run the App**: Navigate to the folder where you saved the file and execute:
 ```bash
-   streamlit run linode_billing_analysis.py
+   streamlit run linode_invoice_analysis.py
 ```
 ## 📖 How to Use
-1. **Download CSV**: The monthly billing CSV file can be downloaded directly from admin.linode.com, or requested from your Akamai Partner.
+1. **Download CSV**: The monthly invoice CSV file can be downloaded directly from admin.linode.com, or requested from your Akamai Partner.
 
 2. **Upload**: Upload the CSV into the sidebar of the tool.
 

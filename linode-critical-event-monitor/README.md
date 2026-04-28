@@ -1,4 +1,4 @@
-## 🚀 Linode Critical Event Monitor Tool
+# 🚀 Linode Critical Event Monitor Tool
 
 This tool push specific instance state changes (like `linode_reboot` or `linode_shutdown`) directly to third-party collaboration tools like Feishu or Lark.
 
@@ -12,6 +12,8 @@ This tool push specific instance state changes (like `linode_reboot` or `linode_
     * `linode_reboot` (User-initiated reboot)
     * `linode_shutdown` (Power off)
     * `linode_boot` (Power on)
+      
+   **You can customize the above Event-types as you need**
 * **State Tracking (Checkpointing)**: Uses a local `last_event_id.txt` file to store the ID of the last processed event. This ensures:
     * No duplicate alerts are sent if the script restarts.
     * Historical events are skipped on the first run to prevent alert spam.
@@ -37,27 +39,13 @@ Ensure your Feishu bot has a Custom Keyword (e.g., "Linode" or "Alert") configur
 ### Running Manually (Testing)
 python3 linode_critical_event_monitor.py
 ### Running as a systemd Service (Production)
-1. Create a service file:
-   sudo nano /etc/systemd/system/linode-monitor.service
-2. Add the following content (replace /path/to/your/script and your_user with actual values):
-   [Unit]
-Description=Linode Event Monitor Service
-After=network.target
-
-[Service]
-Type=simple
-User=your_user
-WorkingDirectory=/path/to/your/script
-ExecStart=/usr/bin/python3 /path/to/your/script/linode_critical_event_monitor.py
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-3.Enable and start the service:
+#### Create the service file linode-monitor.service
+#### Enable and start the service:
+```
 sudo systemctl daemon-reload
 sudo systemctl enable linode-monitor
 sudo systemctl start linode-monitor
+```
 ## 📝 Logging
 You can monitor the service activity in real-time using journalctl:
 journalctl -u linode-monitor -f

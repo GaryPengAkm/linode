@@ -69,9 +69,9 @@ def process_billing_file(file):
             else:
                 inst_df['Region'] = inst_df['Description'].apply(lambda x: x.split(' - ')[1].strip() if ' - ' in x else "Unknown")
             
-            # Convert to datetime objects
-            inst_df['From_DT'] = pd.to_datetime(inst_df['From'])
-            inst_df['To_DT'] = pd.to_datetime(inst_df['To'])
+            # Convert to datetime objects with mixed format inference
+            inst_df['From_DT'] = pd.to_datetime(inst_df['From'], format='mixed')
+            inst_df['To_DT'] = pd.to_datetime(inst_df['To'], format='mixed')
             
             return df, inst_df
         return df, None
@@ -82,8 +82,8 @@ def process_billing_file(file):
 def get_hourly_stats(df, group_col, selected_items):
     """Calculate hourly active instances based on 'From' and 'To' times."""
     if df.empty: return pd.DataFrame()
-    start_min, end_max = df['From_DT'].min().floor('H'), df['To_DT'].max().ceil('H')
-    hourly_range = pd.date_range(start=start_min, end=end_max, freq='H')
+    start_min, end_max = df['From_DT'].min().floor('h'), df['To_DT'].max().ceil('h')
+    hourly_range = pd.date_range(start=start_min, end=end_max, freq='h')
     
     summary_data = []
     for hour in hourly_range:
@@ -267,28 +267,4 @@ if uploaded_file:
 
                 st.subheader("💡 Overall Analysis Summary")
                 m1, m2, m3 = st.columns(3)
-                m1.metric("Total Account Free Quota", f"{to_tb(total_free_gb):.2f} TB")
-                m2.metric("Billed Overage Traffic", f"{to_tb(overage_gb):.2f} TB")
-                m3.metric("Total Actual Traffic Consumed This Month", f"{to_tb(total_free_gb + overage_gb):.2f} TB")
-                
-                st.divider()
-                cl, cr = st.columns(2)
-                with cl:
-                    st.subheader("✅ Full-Month Running Machines")
-                    full_res = processed_inst[processed_inst['Run_Type'] == "Full Month"].groupby('Model').agg(
-                        Quantity=('Model', 'count'),
-                        Total_Free_Quota_TB=('Quota_GB', lambda x: to_tb(x.sum()))
-                    )
-                    st.table(full_res.style.format("{:.2f}", subset=['Total_Free_Quota_TB']))
-                with cr:
-                    st.subheader("⏳ Partial-Month Running Machines")
-                    part_res = processed_inst[processed_inst['Run_Type'] == "Partial Month"].groupby('Model').agg(
-                        Total_Used_Hours=('Used_Hours', 'sum'),
-                        Prorated_Free_Quota_TB=('Quota_GB', lambda x: to_tb(x.sum()))
-                    )
-                    st.table(part_res.style.format({
-                        "Total_Used_Hours": "{:.2f}", 
-                        "Prorated_Free_Quota_TB": "{:.2f}"
-                    }))
-else:
-    st.info("💡 Please upload the Linode billing CSV file in the left sidebar.")
+                m1.metric("Total Account Free Quota", f"{to_tb(total_free_gb):
